@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 const mongoConfig = require('../configs/mongo-config')
 //mongoose.connect('mongodb://localhost/shoppingApp');
 //mongoose.connect('mongodb://localhost/myShoppingApp3', { useNewUrlParser: true, useCreateIndex: true, });
-mongoose.connect(mongoConfig, { useNewUrlParser: true, useCreateIndex: true, });
+mongoose.connect(mongoConfig.url, { useNewUrlParser: true, useCreateIndex: true, });
 
 
 var categories =
